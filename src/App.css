@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
-}
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-align: centre;
+ }
+ body{
+  background:#5a94df ;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ .box{
+  background: #fff;
+  padding:30px 120px;
+  width: 550px;
+  position: absolute;
+  top:50%; /*from the top and left it has setted the axis x-axis an y-axis at the centre and with refrence to that*/             
+  left:50%; /*we have translate the centre with below command w.r.t the axis.*/
+  transform:translate(-50%,-50%);
+  border-radius: 20px;
+  text-align:center;
+ }
+ .logo{
+  width:30px;
+  margin-bottom: 20px;
+  padding-right: 2px;
+ }
+ #logo-size{
+  height:22px;
+  width:22px;
+  
+ }
+ .box h2{
+  margin-bottom:4px;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .box button{
+  width: 100%; /*100% to the padding */
+  padding:10px 0px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px 0px;
+  background: transparent;
+  border: 1px solid #816969;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 18px;
+  height: 42px;
 }
 
-.App-link {
-  color: #61dafb;
+.box button img{
+  width: 28px;
+  margin-right: 10px;
+  margin-top:19px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box span{
+  display:block;
+  width: 40px;
+  margin: auto;
+  background: #fff;
+  font-size: 14px;
+  margin-top: -13px;
 }
+
+.box input{
+  width:100%;
+  background:transparent;
+  border:1px solid #999;
+  outline:0;
+  padding: 15px 10px;
+  border-radius:9px;
+  margin-top: 16px;
+}
+
+::placeholder {
+  font-weight:500;
+  color: #333;
+  text-align: center;
+  font-size: 13.4px;
+}
+#filled{
+  background:rgb(89, 142, 211);
+  font-size: 14px;
+  color: #fff;
+  
+  
+}
+
+.box p a{
+  color: #0e62a7;
+  cursor: pointer;
+}
+
+#coding{
+  height:40px;
+  width:40px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+#green{
+  background: rgb(82, 173, 82);
+  color: #fff;
+  font-size: 14.5px;
+  margin-bottom: -10px;
+}
+#google {
+  margin-top: 35px;
+  margin-bottom: -10px;
+ }
+
